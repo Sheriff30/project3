@@ -33,7 +33,21 @@ body {
   transform: translateX(100%);
   visibility: hidden;
   opacity: 0;
+  display: none;
   transition: ease-in-out all 0.3s;
+}
+
+header .container .sidebarlinks {
+  flex-direction: row;
+  gap: 2rem;
+  padding: 0;
+}
+
+header .container .sidebarlinks a {
+  padding: 0;
+  border: none;
+  color: var(--color-primary);
+  font-size: 1.8rem;
 }
 
 .sidebar.active {
@@ -69,6 +83,9 @@ body {
 header {
   background-color: var(--color-secondary);
   padding: 2rem 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 111111;
 }
 
 header .container {
@@ -182,11 +199,16 @@ h2 {
   text-decoration: none;
 }
 
-.contact-icon,
-.menubar {
+.contact-icon {
   display: flex;
   width: 3rem;
   height: 3rem;
+}
+
+.menubar {
+  width: 3rem;
+  height: 3rem;
+  display: none;
 }
 
 .contact-link {
@@ -321,6 +343,18 @@ h2 {
 @media screen and (max-width: 1050px) {
   html {
     font-size: 50%;
+  }
+
+  .menubar {
+    display: flex;
+  }
+
+  .sidebar {
+    display: grid;
+  }
+
+  header .container .sidebarlinks {
+    display: none;
   }
 
   .section,
