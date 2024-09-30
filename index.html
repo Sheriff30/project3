@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,10 +22,25 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
+    <!-- sidebar -->
+    <div class="sidebar">
+      <div class="sidebarlinks">
+        <div class="close-icon">
+          <img src="close-outline.svg" alt="" />
+        </div>
+        <a href="#services" class="sidebarlink">Services</a>
+        <a href="#contact" class="sidebarlink">Contact us</a>
+        <a href="#testimonials" class="sidebarlink">Testimonials</a>
+        <a href="#about" class="sidebarlink">About us</a>
+      </div>
+    </div>
     <!-- header -->
     <header>
       <div class="container">
         <div class="logo">Logo</div>
+        <div class="menubar">
+          <img src="menu-outline.svg" alt="menubar icon" />
+        </div>
       </div>
     </header>
     <!-- Hero section -->
@@ -60,7 +75,7 @@
       </div>
     </div>
     <!-- Services Section -->
-    <div class="section services-section">
+    <div class="section services-section" id="services">
       <div class="container">
         <h2>Service we provide</h2>
 
@@ -95,7 +110,7 @@
       </div>
     </div>
     <!-- Contact Section -->
-    <div class="section contact-section">
+    <div class="section contact-section" id="contact">
       <div class="container">
         <h2>Contact us</h2>
         <div class="contact-content">
@@ -145,7 +160,7 @@
       </div>
     </div>
     <!-- Testimonials -->
-    <div class="section testimonials-section">
+    <div class="section testimonials-section" id="testimonials">
       <div class="container">
         <h2>What people say about us</h2>
 
@@ -201,27 +216,68 @@
         </div>
       </div>
     </div>
+    <!-- About -->
+    <div class="about-section section" id="about">
+      <div class="container">
+        <h2>About us</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+              modi quae perferendis consequuntur, ratione quo unde ducimus odio
+              enim blanditiis!
+            </p>
+          </div>
+          <div class="about-text">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+              modi quae perferendis consequuntur, ratione quo unde ducimus odio
+              enim blanditiis!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Footer -->
     <div class="section footer">
       <div class="container">
-        <div class="logo">Logo</div>
+        <div class="footer-content">
+          <div class="logo">Logo</div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+            reiciendis.
+          </p>
+        </div>
         <div class="footer-links">
+          <div class="contact-social">
+            <a href="#">
+              <img src="/logo-facebook.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="/logo-instagram.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="/logo-twitter.svg" alt="" />
+            </a>
+          </div>
           <div class="contact-links">
             <a href="#" class="contact-link">
               <span class="contact-icon">
-                <img src="call-outline.svg" alt="" />
+                <img src="call-black.svg" alt="" />
               </span>
               <span> 0100000000000 </span>
             </a>
             <a href="#" class="contact-link">
               <span class="contact-icon">
-                <img src="call-outline.svg" alt="" />
+                <img src="call-black.svg" alt="" />
               </span>
               <span> 0100000000000 </span>
             </a>
             <a href="#" class="contact-link">
               <span class="contact-icon">
-                <img src="mail-outline.svg" alt="" />
+                <img src="mail-black.svg" alt="" />
               </span>
               <span> mail@mail.com </span>
             </a>
