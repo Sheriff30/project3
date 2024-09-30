@@ -106,6 +106,8 @@ header .container {
 .hero-text h1 {
   font-size: 6rem;
   color: var(--color-primary);
+  font-family: "Kalam", cursive;
+  font-style: italic;
 }
 .swiper {
   width: 100%;
