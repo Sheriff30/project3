@@ -251,7 +251,6 @@ h2 {
 
 .related-link img {
   width: 100%;
-  object-fit: cover;
 }
 
 .contact-text {
@@ -338,6 +337,11 @@ h2 {
   .sidebar {
     width: 100%;
   }
+
+  .related-links {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 1050px) {
   html {
@@ -378,5 +382,9 @@ h2 {
   .footer-links {
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .swiper {
+    height: 50rem;
   }
 }
